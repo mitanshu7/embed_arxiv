@@ -48,8 +48,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 - [ ] Embed title, abstract, full text articles created from [mitanshu7/scientific_dataset_arxiv](https://github.com/mitanshu7/scientific_dataset_arxiv) using [Alibaba-NLP/gte-large-en-v1.5](https://huggingface.co/Alibaba-NLP/gte-large-en-v1.5) (Max Tokens=8192, Embedding dimensions=1024) for its larger embedding dimensions.
 
-- [ ] Create a website for recommending scientific articles using these embeddings. 
+- [ ] Create a website for recommending scientific articles using these embeddings.
+
+- [ ] Test env creations
 
 ## Results:
 1. Find **Abstract embedded dataset** till mid-2024 here: [bluuebunny/arxiv_embeddings_Alibaba-NLP_gte-base-en-v1.5](https://huggingface.co/datasets/bluuebunny/arxiv_embeddings_Alibaba-NLP_gte-base-en-v1.5) using model [Alibaba-NLP/gte-base-en-v1.5](https://huggingface.co/Alibaba-NLP/gte-base-en-v1.5) (Max Tokens=8192, Embedding dimensions=768).
-2. Find **Title, Abstract, Full-text article embedded dataset** here: [bluuebunny/embedded_arxiv_dataset_by_year_mxbai-embed-large-v1](https://huggingface.co/datasets/bluuebunny/embedded_arxiv_dataset_by_year_mxbai-embed-large-v1) using model [mixedbread-ai/mxbai-embed-large-v1](https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1) (Max Tokens=512, Embedding dimensions=1024).
+2. Find **Title, Abstract, Full-text article embedded dataset** till 2023 here: [bluuebunny/embedded_arxiv_dataset_by_year_mxbai-embed-large-v1](https://huggingface.co/datasets/bluuebunny/embedded_arxiv_dataset_by_year_mxbai-embed-large-v1) using model [mixedbread-ai/mxbai-embed-large-v1](https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1) (Max Tokens=512, Embedding dimensions=1024).
