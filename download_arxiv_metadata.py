@@ -19,5 +19,10 @@ data_file_path = f'{download_folder}/arxiv-metadata-oai-snapshot.json'
 if not os.path.exists(data_file_path):
     print(f'Downloading {data_file_path}')
     subprocess.run(['kaggle', 'datasets', 'download', '--dataset', dataset_path, '--path', download_folder, '--unzip'])
+    print(f'Downloaded {data_file_path}')
 else:
     print(f'{data_file_path} already exists')
+    print('Skipping download')
+
+## Done
+print('Done!')
