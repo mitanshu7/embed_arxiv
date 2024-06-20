@@ -133,5 +133,9 @@ if __name__ == '__main__':
     ## Track time
     end = pd.Timestamp.now()
 
+    print("Done!")
+
     ## Print the time taken
     print(f"TOTAL Time taken: {end - start}")
+
+############################################################################################################
