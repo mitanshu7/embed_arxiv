@@ -14,6 +14,6 @@ df = pd.concat([pd.read_parquet(file) for file in files], ignore_index=True)
 
 # Save the combined file
 print("Saving the combined file...")
-df.to_parquet('combined.parquet')
+df.to_parquet('arxiv_embeddings_Alibaba-NLP_gte-base-en-v1.5/combined.parquet')
 
 print("Done!")
