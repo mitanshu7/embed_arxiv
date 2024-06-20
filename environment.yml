@@ -1,0 +1,29 @@
+# This file is a specification of the Python environment for the project.
+name: embed_arxiv  # The name of the conda environment.
+
+# Specify the channels where the packages are available.
+channels:
+  - conda-forge  # conda-forge is a community-led conda channel of installable packages.
+  - xformers  # xformers is a channel for the xformers package.
+  - pytorch  # pytorch is a channel for the PyTorch package.
+  - nvidia  # nvidia is a channel for the NVIDIA package.
+
+# Specify the packages to be installed.
+dependencies:  # List of packages that will be installed in the environment.
+  - python=3.10  # The Python programming language.
+  - pandas  # Data analysis and manipulation library.
+  - fastparquet  # Library to read and write Parquet files.
+  - datasets  # Library for easily accessing and manipulating datasets.
+  - jupyterlab  # Web-based interactive development environment for Jupyter notebooks.
+  - pytorch  # Open source machine learning framework.
+  - torchvision  # PyTorch computer vision library.
+  - torchaudio  # PyTorch audio library.
+  - pytorch-cuda=12.1  # PyTorch with CUDA support.
+  - transformers  # State-of-the-art natural language processing library.
+  - xformers  # Library for transformer models.
+  - kaggle  # Kaggle API client.
+  - pip  # Package installer for Python.
+  - pip:  # Packages to be installed via pip.
+    - pymilvus  # Python SDK for Milvus.
+
+# End of file

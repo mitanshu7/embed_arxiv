@@ -12,6 +12,9 @@ The Embed Arxiv is a tool designed to suggest relevant scientific articles based
 
 ## Installation
 
+### Disclaimer
+Tested on Linux with CUDA 12, and the requirements/environment file follow the same.
+
 ### Prerequisites
 
 Satisfy prerequisites by issuing the command for your choice of package manager
