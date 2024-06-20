@@ -1,3 +1,6 @@
 *.json
 *.parquet
 *tmp*
+kaggle/
+arxiv_metadata_by_year/
+arxiv_embeddings_Alibaba-NLP_gte-base-en-v1.5/

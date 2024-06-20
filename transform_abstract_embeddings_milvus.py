@@ -3,6 +3,7 @@ from pymilvus import MilvusClient, DataType
 from pymilvus.bulk_writer import LocalBulkWriter, BulkFileType
 import pandas as pd
 from time import time
+import os
 
 # Track the time
 start = time()
@@ -23,12 +24,18 @@ schema.add_field(field_name="vector", datatype=DataType.FLOAT_VECTOR, dim=768)
 print("Verifying the schema...")
 print(schema.verify())
 
+# Create local path directory
+print("Creating local path directory...")
+local_path = 'milvus_data'
+if not os.path.exists(local_path):
+    os.makedirs(local_path)
+
 # Create a writer
 print("Creating a writer...")
 writer = LocalBulkWriter(
     schema=schema,
-    local_path='.',
-    segment_size=256 * 1024 * 1024, 
+    local_path=local_path,
+    segment_size=256 * 1024 * 1024, # The default of 512MB overshoots the limit and then zilliz throws an error on free cluster
     file_type=BulkFileType.PARQUET
 )
 
